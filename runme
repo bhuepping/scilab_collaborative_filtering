@@ -1,0 +1,2 @@
+scilab -nwni -nb -e "exec example01.sci; example01('svd_ruby.csv',2,0.5,10000,1E-10); exit;"
+
