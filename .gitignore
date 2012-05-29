@@ -1,1 +1,5 @@
 *.sci~
+item_features.csv
+item_features.html
+user_features.html
+user_features.csv
