@@ -12,6 +12,7 @@ exec kernel/gradients.sci;
 exec kernel/putratings.sci;
 exec kernel/iterate.sci;
 exec kernel/makehtml.sci;
+exec kernel/makehtml_both.sci;
 
 // read ratings:
 ratings = fscanfMat(ratingsfile);
@@ -47,6 +48,7 @@ fprintfMat('item_features.csv',item_features,'  %+1.6e')
 
 makehtml('user_features.html',user_features);
 makehtml('item_features.html',item_features);
+makehtml_both(user_features,item_features);
 
 endfunction
 
